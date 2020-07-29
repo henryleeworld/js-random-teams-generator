@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="隨機團隊分配" />
+        <meta property="og:description" content="可能大家從小開始就很習慣學校裡面「分組」這件事，不管是一起從事學校活動要分組、體育課要分組，還是上課的作業要分組，不時都會出現什麼四人一組、六人一組巴拉巴拉這種狀況。"/>
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:type" content="website" />
+        <link href="https://fonts.googleapis.com/css?family=Coiny|Thasadith:700" rel="stylesheet" />
+        <link rel="stylesheet" href="css/random-teams-generator.css" />
+        <title>隨機團隊分配</title>
+    </head>
+    <body>
+        <div class="generator">
+            <form id="form">
+                <div>
+                    <label class="method-label method-2" for="teams-labels">團隊名稱</label>
+                    <p>（一個一行或逗號分隔）</p>
+                    <textarea id="teams-labels" cols="20" rows="1" name="teams-labels" autofocus>十戒, 曉, 幻影旅團, 死神護庭十三番隊</textarea>
+                </div>
+                <div class="members">
+                    <label for="teams-members">成員姓名</label>
+                    <p>（一個一行或逗號分隔）</p>
+                    <textarea id="teams-members" cols="20" rows="5" name="teams-members">歐格·伊茲卡, 巴納比·布魯克斯二世, 魯路修·蘭佩洛基, 勝生勇利, 背包, 維克托·尼基福羅夫, 坂田銀時, 白臉角鴞, 耳廓狐, 白雪, 木之本桜, 智乃, 里維, 點斑鵰鴞, 跡部景吾, 桐人, 藏馬</textarea>
+                </div>
+                <button type="submit" id="submit" class="submit">分組！</button>
+            </form>
+            <div class="results" id="results">
+                <div class="finalteams" id="finalteams"></div>
+                <button class="copy" type="button" id="copy">複製</button>
+            </div>
+        </div>
+        <script src="js/random-teams-generator.js" defer></script>
+    </body>
+</html>
